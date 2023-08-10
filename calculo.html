@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <img src="./img/logo-bnzz2.png" alt="Logo BNZZ">
+        </div>
+    </header>
+    <div class="conteudo-calculadora">
+        <div class="calculadora">
+            <form action="informacoes">
+                <h1>Calculadora IMC</h1>
+                <div class="radio">
+                    <input class="radioinput" type="radio" value="option1" name="myradio" id="myradio1">
+                    <label class="radiolabel" for="myradio1">Masculino</label>
+                    <input class="radioinput" type="radio" value="option1" name="myradio" id="myradio2">
+                    <label class="radiolabel" for="myradio2">Feminino</label>
+                 </div>
+                 <div class="peso-altura">
+                    <input class="peso" type="number" placeholder="Peso (Kg)">
+                    <label class="label-peso" for="peso"></label>
+                    <input class="altura" type="number" placeholder="Altura (Cm)">
+                    <label class="label-altura" for="altura"></label>
+                    <input class="botao" type="button" value="Calcular" onclick="calcular()">
+                    <a href="./index.html"><input class="botao" type="button" value="Voltar" onclick="voltar()"></a>
+                    
+                    <div class="resultado">
+                        <h1></h1> 
+                    </div>
+                    <div class="faixa-imc">
+                        
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer-calculo">
+        &copy; Bnzz.Corporation
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
